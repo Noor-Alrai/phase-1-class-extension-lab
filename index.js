@@ -12,9 +12,7 @@ class Polygon{
     }
 }
 class Triangle extends Polygon{
-    constructor(arraySide){
-        super(arraySide)
-    }
+   
     get isValid(){
         if(this.arraySide[0] + this.arraySide[1] > this.arraySide[2] && this.arraySide[1] + this.arraySide[2] > this.arraySide[0] &&
             this.arraySide[0] + this.arraySide[2] > this.arraySide[1]){
@@ -26,9 +24,7 @@ class Triangle extends Polygon{
     }
 }
 class Square extends Polygon{
-    constructor(arraySide){
-        super(arraySide)
-    }
+   
 
     get isValid(){
       if(this.arraySide[0] == this.arraySide[1] && this.arraySide[1] == this.arraySide[2] && this.arraySide[2] == this.arraySide[3])
